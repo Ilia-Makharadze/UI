@@ -1,11 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_first"
-        android:icon="@drawable/ic_home"
-        android:title="Summary" />
+        android:id="@+id/nav_calendar"
+        android:icon="@drawable/calendar_2"
+        android:title="Calendar" />
     <item
-        android:id="@+id/nav_second"
-        android:icon="@drawable/ic_settings"
-        android:title="Request" />
+        android:id="@+id/nav_frame"
+        android:icon="@drawable/frame_34"
+        android:title="Frame" />
+    <item
+        android:id="@+id/nav_layer"
+        android:icon="@drawable/layer"
+        android:title="Layer" />
+    <item
+        android:id="@+id/nav_note"
+        android:icon="@drawable/note_text"
+        android:title="Note" />
+    <item
+        android:id="@+id/nav_receipt"
+        android:icon="@drawable/receipt_2"
+        android:title="Receipt" />
 </menu>

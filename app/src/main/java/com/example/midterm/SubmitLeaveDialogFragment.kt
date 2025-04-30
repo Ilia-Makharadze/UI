@@ -1,27 +1,39 @@
 package com.example.midterm
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.Toast
+import androidx.fragment.app.DialogFragment
 
+class SubmitLeaveDialogFragment : DialogFragment() {
 
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
 
-class DialogFragment : Fragment() {
+        val view = inflater.inflate(R.layout.fragment_dialog, container, false)
 
-    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        return AlertDialog.Builder(requireContext())
-            .setTitle("Submit Leave")
-            .setMessage("Are you sure you want to submit a leave?")
-            .setPositiveButton("Yes") { dialog, _ ->
-                Toast.makeText(requireContext(), "Leave submitted!", Toast.LENGTH_SHORT).show()
-                dialog.dismiss()
-            }
-            .setNegativeButton("Cancel") { dialog, _ ->
-                dialog.dismiss()
-            }
-            .create()
+        val btnYes = view.findViewById<Button>(R.id.btnYes)
+        val btnNo = view.findViewById<Button>(R.id.btnNo)
+
+        btnYes.setOnClickListener {
+            Toast.makeText(requireContext(), "Leave submitted!", Toast.LENGTH_SHORT).show()
+            dismiss()
+        }
+
+        btnNo.setOnClickListener {
+            dismiss()
+        }
+
+        return view
     }
 
+    override fun onStart() {
+        super.onStart()
+        dialog?.window?.setLayout(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+    }
 }
