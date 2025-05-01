@@ -7,8 +7,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-class SubmitLeaveDialogFragment : DialogFragment() {
+class SubmitLeaveDialogFragment : BottomSheetDialogFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -4,19 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SubmitLeaveDialogFragment">
+    tools:context=".SubmitLeaveDialogFragment"
+    android:layout_gravity="center">
 
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="108dp"
-        android:layout_height="77dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="340dp"
         android:background="@drawable/parple_border"
         android:src="@drawable/layer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,13 +37,13 @@
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
         android:text="Double-check your leave details to ensure\n everything is correct. Do you want to proceed?"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.613"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -50,9 +51,10 @@
         android:id="@+id/btnYes"
         android:layout_width="186dp"
         android:layout_height="61dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="20dp"
         android:text="Yes, Submit"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -60,12 +62,12 @@
         android:id="@+id/btnNo"
         android:layout_width="180dp"
         android:layout_height="51dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="@color/white"
         android:text="No,Let me check"
         android:textColor="#A020F0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnYes" />
 
